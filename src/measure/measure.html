@@ -1,0 +1,76 @@
+<template>
+    <section class="au-animate">
+        <h2>${heading}</h2>
+
+        <div class='col-offset-4 col-md-8'>
+
+            <form class='form-horizontal' role="form" submit.delegate="submit()">
+
+                <div class="form-group">
+                    <label for="when" class="col-md-4 control-label">When</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="dateTime" class="form-control" id="when">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="weight" class="col-md-4 control-label">Weight</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="weight" class="form-control" id="weight" placeholder="Weight">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="fat" class="col-md-4 control-label">Fat</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="fat" class="form-control" id="fat" placeholder="Fat Percentage">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="water" class="col-md-4 control-label">Water</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="water" class="form-control" id="water" placeholder="Water">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="muscleMass" class="col-md-4 control-label">Muscle Mass</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="muscleMass" class="form-control" id="muscleMass" placeholder="Muscle Mass">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="physiqueRating" class="col-md-4 control-label">Physique Rating</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="physiqueRating" class="form-control" id="physiqueRating" placeholder="Physique Rating">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="bmr" class="col-md-4 control-label">Basal Metabolic Rate</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="bmr" class="form-control" id="bmr" placeholder="Basal Metabolic Rate">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="metabolicAge" class="col-md-4 control-label">Metabolic Age</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="metabolicAge" class="form-control" id="metabolicAge" placeholder="Metabolic Age">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="boneMass" class="col-md-4 control-label">Bone Mass</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="boneMass" class="form-control" id="boneMass" placeholder="Bone Mass">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="visceralFat" class="col-md-4 control-label">Visceral Fat</label>
+                    <div class="col-md-8">
+                        <input type="text" value.bind="visceralFat" class="form-control" id="visceralFat" placeholder="Visceral Fat">
+                    </div>
+                </div>
+                <div class='pull-right'>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+            </form>
+        </div>
+    </section>
+</template>
