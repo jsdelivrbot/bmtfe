@@ -1,5 +1,9 @@
 //import {computedFrom} from 'aurelia-framework';
 
+
+
+//https://jsfiddle.net/api/post/library/pure/
+
 export class Home {
     heading = 'Some cool charts here!';
     data = {

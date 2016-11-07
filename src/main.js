@@ -3,7 +3,9 @@ import 'bootstrap';
 export function configure(aurelia) {
   aurelia.use
     .standardConfiguration()
-    .developmentLogging();
+    .developmentLogging()
+    //.plugin("aurelia-chart")
+    .plugin('aurelia-bootstrap-datepicker');
     //.plugin("aurelia-chart");
 
   //Uncomment the line below to enable animation.

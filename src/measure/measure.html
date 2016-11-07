@@ -7,68 +7,84 @@
             <form class='form-horizontal' role="form" submit.delegate="submit()">
 
                 <div class="form-group">
-                    <label for="when" class="col-md-4 control-label">When</label>
-                    <div class="col-md-8">
-                        <input type="text" value.bind="dateTime" class="form-control" id="when">
+                    <label for="date" class="col-md-4 control-label">Date</label>
+                    <div class="col-md-8">                        
+                        <bootstrap-datepicker   value.bind='measure.date' id="date" dp-options.bind='dpOptions'>
+                        </bootstrap-datepicker>
+                    </div>                    
+                </div>
+                <div class="form-group">
+                    <label class="col-md-4 control-label">Time</label>
+                    <div class="col-md-8 input-group">
+                        <div class="col-md-3 col-xs-4">
+                            <input type="number" value.bind="measure.hour" class="form-control" min="0" max="23" step="1">    
+                        </div>
+                        <div class="col-md-1 col-xs-1"><p><b>:</b></p>             
+                        </div>
+                        <div class="col-md-3 col-xs-4">
+                            <input type="number" value.bind="measure.minute" class="form-control" min="0" max="59" step="1">    
+                        </div>                        
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="weight" class="col-md-4 control-label">Weight</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="weight" class="form-control" id="weight" placeholder="Weight">
+                        <input type="number" value.bind="measure.weight" class="form-control" id="weight" placeholder="Weight" min="40" max="200" step="0.1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="fat" class="col-md-4 control-label">Fat</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="fat" class="form-control" id="fat" placeholder="Fat Percentage">
+                        <input type="number" value.bind="measure.fat" class="form-control" id="fat" placeholder="Fat Percentage" min="1" max="80" step="0.1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="water" class="col-md-4 control-label">Water</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="water" class="form-control" id="water" placeholder="Water">
+                        <input type="number" value.bind="measure.water" class="form-control" id="water" placeholder="Water" min="1" max="80" step="0.1">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="muscleMass" class="col-md-4 control-label">Muscle Mass</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="muscleMass" class="form-control" id="muscleMass" placeholder="Muscle Mass">
+                        <input type="number" value.bind="measure.muscleMass" class="form-control" id="muscleMass" placeholder="Muscle Mass" min="1" max="200" step="0.1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="physiqueRating" class="col-md-4 control-label">Physique Rating</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="physiqueRating" class="form-control" id="physiqueRating" placeholder="Physique Rating">
+                        <input type="number" value.bind="measure.physiqueRating" class="form-control" id="physiqueRating" placeholder="Physique Rating" min="1" max="10" step="1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="bmr" class="col-md-4 control-label">Basal Metabolic Rate</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="bmr" class="form-control" id="bmr" placeholder="Basal Metabolic Rate">
+                        <input type="number" value.bind="measure.bmr" class="form-control" id="bmr" placeholder="Basal Metabolic Rate" min="1" max="5000" step="1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="metabolicAge" class="col-md-4 control-label">Metabolic Age</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="metabolicAge" class="form-control" id="metabolicAge" placeholder="Metabolic Age">
+                        <input type="number" value.bind="measure.metabolicAge" class="form-control" id="metabolicAge" placeholder="Metabolic Age" min="5" max="100" step="1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="boneMass" class="col-md-4 control-label">Bone Mass</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="boneMass" class="form-control" id="boneMass" placeholder="Bone Mass">
+                        <input type="number" value.bind="measure.boneMass" class="form-control" id="boneMass" placeholder="Bone Mass" min="1" max="200" step="0.1">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="visceralFat" class="col-md-4 control-label">Visceral Fat</label>
                     <div class="col-md-8">
-                        <input type="text" value.bind="visceralFat" class="form-control" id="visceralFat" placeholder="Visceral Fat">
+                        <input type="number" value.bind="measure.visceralFat" class="form-control" id="visceralFat" placeholder="Visceral Fat" min="1" max="100" step="1">
                     </div>
-                </div>
+                </div>  
                 <div class='pull-right'>
-                    <button type="submit" class="btn btn-default">Submit</button>
+                    <button type="button" class="btn btn-default" click.delegate='backToHistory()'>Cancel</button>
+                    <button type="button" class="btn btn-danger" click.delegate='delete()'>Delete</button>
+                    <button type="submit" class="btn btn-primary">Save & Close</button>
                 </div>
             </form>
         </div>
