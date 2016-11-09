@@ -1,7 +1,7 @@
 {
-  "name": "aurelia-skeleton-navigation",
+  "name": "Body Measurements Tracker",
   "version": "1.0.0",
-  "description": "A starter kit for building a standard navigation-style app with Aurelia.",
+  "description": "A simple way to capture, track and analyze your body measurements",
   "keywords": [
     "aurelia",
     "navigation",
@@ -22,7 +22,7 @@
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e",
     "start": "node app",
-    "postinstall": "gulp build"
+    //"postinstall": "gulp build"
   },
   "devDependencies": {
     "aurelia-bundler": "^0.4.0",
