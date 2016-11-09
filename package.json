@@ -22,7 +22,7 @@
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e",
     "start": "node app",
-    //"postinstall": "gulp build"
+    "postinstall": ""
   },
   "devDependencies": {
     "aurelia-bundler": "^0.4.0",
