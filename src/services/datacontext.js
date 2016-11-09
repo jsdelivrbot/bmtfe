@@ -5,7 +5,8 @@ import {HttpClient} from 'aurelia-http-client';
 export class Datacontext {
         
     constructor(httpClient){
-        httpClient.configure(config => config.withBaseUrl('http://localhost:1337/'));
+        //httpClient.configure(config => config.withBaseUrl('http://localhost:1337/'));
+        httpClient.configure(config => config.withBaseUrl('https://bmtbe.herokuapp.com/'));
         this.http = httpClient;
     }
     
@@ -16,7 +17,7 @@ export class Datacontext {
 
     getById(id) {
         //return this.http.jsonp('http://localhost:1337/measure', 'callback');
-        return this.http.createRequest('http://localhost:1337/measure')
+        return this.http.createRequest('measure')
                     .asGet()  
                     .withParams({ id: id })
                     .send();        
