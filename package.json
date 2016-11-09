@@ -41,6 +41,7 @@
     "browser-sync": "^2.13.0",
     "conventional-changelog": "1.1.0",
     "del": "^2.2.1",
+    "gulp-babel": "^6.1.2",
     "gulp-changed": "^1.3.2",
     "gulp-plumber": "^1.1.0",
     "isparta": "^4.0.0",
