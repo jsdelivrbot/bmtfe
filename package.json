@@ -21,7 +21,7 @@
   "scripts": {
     "test": "gulp test",
     "e2e": "gulp serve webdriver-standalone e2e",
-    "start": "node app",
+    "start": "node web.js",
     "postinstall": ""
   },
   "dependencies": {
