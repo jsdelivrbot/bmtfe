@@ -4,8 +4,13 @@ var express = require('express');
 var morgan = require('morgan');
 var logger = morgan('combined')
 
-var app = express();
+var location = "" + __dirname + "\\dist\\";
+    
+console.log(location);
 
+var app = express();
 app.use(morgan('combined'));
-app.use(gzippo.staticGzip("" + __dirname + "/build"));
-app.listen(process.env.PORT || 5000);
+app.use(gzippo.staticGzip(location));
+//app.listen(process.env.PORT || 5000);
+
+app.listen(5000);
