@@ -4,7 +4,9 @@ var express = require('express');
 var morgan = require('morgan');
 var logger = morgan('combined')
 
-var location = "" + __dirname + "\\dist\\";
+//var location = "" + __dirname + "\\dist\\";
+
+var location = "" + __dirname;
     
 console.log(location);
 
