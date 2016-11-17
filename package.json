@@ -2,11 +2,14 @@
   "name": "bmt",
   "version": "1.0.0",
   "description": "A simple way to capture, track and analyze your body measurements",
-  "keywords": [
+   "engines": {
+    "node": "5.3.0"
+  },
+    "keywords": [
     "aurelia",
     "navigation",
     "skeleton"
-  ],
+  ],    
   "homepage": "http://aurelia.io",
   "bugs": {
     "url": "https://github.com/aurelia/skeleton-navigation/issues"
