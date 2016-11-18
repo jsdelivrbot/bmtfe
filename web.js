@@ -13,7 +13,7 @@ var location = "" + __dirname;
 var app = express();
 //app.use(morgan('combined'));
 app.use(gzippo.staticGzip(location));
-//app.listen(process.env.PORT || 5000);
+
 
 //app.get('/', function(req, res) {
 //    res.sendFile(path.join(__dirname + '/index.html'));
@@ -23,4 +23,4 @@ app.get('/', function(req, res){
     res.sendFile('index.html', { root: __dirname } );
 });
 
-app.listen(5000);
+app.listen(process.env.PORT || 5000);
