@@ -1,0 +1,1 @@
+module.exports = require("npm:is-absolute@0.2.6/index.js");
