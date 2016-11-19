@@ -1,5 +1,5 @@
 import {inject} from 'aurelia-framework';
-import {Datacontext} from 'services/Datacontext';
+import {Datacontext} from 'services/datacontext';
 import {Router} from 'aurelia-router';
 import moment from 'moment';
 
