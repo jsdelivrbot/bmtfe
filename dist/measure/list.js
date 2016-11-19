@@ -1,6 +1,6 @@
 'use strict';
 
-System.register(['aurelia-framework', 'services/Datacontext', 'aurelia-router'], function (_export, _context) {
+System.register(['aurelia-framework', 'services/datacontext', 'aurelia-router'], function (_export, _context) {
     "use strict";
 
     var inject, Datacontext, Router, _dec, _class, List;
